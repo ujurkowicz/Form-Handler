@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+          
+          body {
+            font-family: 'Nunito', sans-serif;
+            color: #384047;
+          }
+          
+          form {
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 50px;
+            background: #f4f7f8;
+            border-radius: 8px;
+          }
+          
+          h1 {
+            margin: 0 0 30px 0;
+            text-align: center;
+          }
+          
+          input{
+            background: rgba(255,255,255,0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: 0;
+            outline: 0;
+            padding: 15px;
+            width: 100%;
+            background-color: #e8eeef;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            margin-bottom: 30px;
+          }
+          
+          .star{
+            color:red;
+        }
+          
+          button {
+            padding: 19px 39px 18px 39px;
+            color: #FFF;
+            background-color: #368d2f;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border:none;
+            width: 100%;
+            
+
+            margin-bottom: 10px;
+          }
+          button:hover{
+            background-color:#2b7326;
+            cursor: pointer;
+          }
+          
+          
+          
+          label {
+            display: block;
+            margin-bottom: 8px;
+          }
+          
+
+          
+          @media screen and (min-width: 480px) {
+          
+            form {
+              max-width: 480px;
+            }
+          
+          }
+
+          
+          
+    </style>
+</head>
+<body>
+    
+    <form class="submit-form" action="http://www3.lenoxsoft.com/l/5336/2022-06-03/sjfyq" method="post">
+        <h1>Register today</h1>
+        <div class="form-input-material">
+        <label for="firstName"><span class="star">* </span>First name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div class="form-input-material">
+        <label for="lastName"><span class="star">* </span>Last name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <div class="form-input-material">
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company">
+    </div>
+    <div class="form-input-material">
+        <label for="email"><span class="star">* </span>Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+        <button type="submit" class="btn btn-primary btn-ghost">Submit</button>
+    </form>
+</body>
+</html>

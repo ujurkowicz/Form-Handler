@@ -89,7 +89,7 @@
 </head>
 <body>
     
-    <form action="http://www3.lenoxsoft.com/l/715503/2024-04-11/2smjq6" method="post">
+    <form id="emailForm">
         <h1>Register today</h1>
         <div class="form-input-material">
         <label for="firstName"><span class="star">* </span>First name:</label>
@@ -109,5 +109,25 @@
     </div>
         <button type="submit" class="btn btn-primary btn-ghost">Submit</button>
     </form>
+
+    <script>
+        // Get a reference to the form
+        const form = document.getElementById("emailForm");
+
+        // Add an event listener for form submission
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get the email value from the input field
+            const email = document.getElementById("email").value;
+
+            // You can perform additional validation or processing here if needed
+
+            // Send the email parameter to the specified URL
+            const url = "https://go.demo.pardot.com/l/715503/2024-04-11/2smjq6?email=" + encodeURIComponent(email);
+            window.location.href = url;
+        });
+    </script>
 </body>
+
 </html>
